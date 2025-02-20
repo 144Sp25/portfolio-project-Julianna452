@@ -1,0 +1,13 @@
+/*
+Julianna Lawrence
+February 20th, 2025
+styles.css
+*/
+
+/*CCS reset style rule*/
+body, header, nav, main, footer, img, h1, h3 {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
