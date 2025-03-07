@@ -8,50 +8,60 @@ styles.css
 body, header, nav, main, footer, img, h1, h3 {
     margin: 0;
     padding: 0;
-    border: 0
+    border: 0;
 }
 
 /*Style rules for body and images*/
 body {
-    background-color: #f6eee4
+    background-color: #f6eee4;
 }
 
 img {
     max-width: 100%;
     display: block;
+    align-content: center;
+}
+
+.round {
+    border-radius: 1200px
 }
 
 /*Styles for header content*/
 header{
     text-align: left;
-    font-size: 2em;
-    font-style: oblique;
+    font-size: 1.5em;
+    font-style: bold;
     color: #6c4bc0;
     padding-bottom: 0.5em;
     padding-top: 0.5em;
     padding-left: 2em;
-    padding-right: 2em
+    padding-right: 2em;
 }
 
 header h1 {
-    font-style: italic
+    font-style: bold;
+    text-align: left;
 }
 /*Style rules for navigation area*/
 nav {
-    background-color: #6c4bc0
+    background-color: #6c4bc0;
 }
 
 nav ul {
     list-style: none;
     margin: 0;
-    text-align: center
+    text-align: center;
 }
 
 nav li {
-    display: inline-block;
     font-size: 1.5em;
     font-family: Geneva, Arial, sans-serif;
-    font-weight: bold
+    font-weight: bold;
+    border-top: 1.5px solid #fff;
+}
+
+nav li:first-child {
+    border-top: none;
 }
 
 nav li a {
@@ -61,56 +71,86 @@ nav li a {
     padding-top: 0.5em;
     padding-left: 2em;
     padding-right: 2em;
-    text-decoration: none
+    text-decoration: none;
 }
 
 /*Styles to main content*/
-
 main {
     padding: 2%;
-    font-family: Verdana, Ariel, sans-serif
+    font-family: "Lora";
 }
 
 main p {
-    font-size: 1.25
+    font-size: 1.25;
 }
 
 main h3 {
-    padding-top: 2%
+    padding-top: 2%;
 }
 
 main ul {
-    list-style: square
+    list-style: square;
 }
 
 .link {
     color: #e7414f;
     text-decoration: none;
     font-weight: bold;
-    font-style: italic
+    font-style: italic;
 }
 
 .action {
     font-size: 1.75em;
     font-weight: bold;
-    text-align: center
+    text-align: center;
 }
 
 #contact {
-    text-align: center
+    text-align: center;
 }
 
+.tel-link {
+    background-color: #6c4bc0;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
+.map {
+    height: 95%;
+    width: 50%;
+}
+/*Styles for mobile viewpoint*/
+.mobile {
+    text-align: center;
+}
+/*Hide tab-desk class*/
+.mobile {
+    display: block;
+}
+.tab-desk {
+    display: none;
+}
 /*Style rules for footer*/
 
 footer {
     text-align: center;
     font-size: 0.85em;
     background-color: #6c4bc0;
-    color: f6eee4;
-    padding: 1% 0%
+    color: ffffff;
+    padding: 1% 0%;
 }
 
 footer a {
     color: #f3e6d8;
-    text-decoration: none
+    text-decoration: none;
 }
